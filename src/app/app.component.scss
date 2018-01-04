@@ -1,0 +1,24 @@
+.navbar {
+  $navbar-height: 55px;
+
+  background-color: #eee;
+  height: $navbar-height;
+
+  .brand {
+    width: 80px;
+    height: $navbar-height;
+    background-color: red;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-right: 2rem;
+    }
+  }
+
+  .search {
+    font-size: 0.8rem;
+  }
+}
