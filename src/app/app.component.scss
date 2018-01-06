@@ -1,24 +1,45 @@
-.navbar {
-  $navbar-height: 55px;
+$navbar-height: 90px;
+$nav-font-color: #fff;
 
-  background-color: #eee;
+.navbar {
+  background-color: cadetblue;
   height: $navbar-height;
+  padding-top: $navbar-height/3;
+  color: $nav-font-color;
+  z-index: 999;
 
   .brand {
-    width: 80px;
+    width: 100px;
     height: $navbar-height;
-    background-color: red;
+    margin-right: 50px;
   }
-
   ul {
     list-style-type: none;
 
     li {
       margin-right: 2rem;
+
+      button{
+        font-size: 1rem;
+      }
     }
   }
-
   .search {
     font-size: 0.8rem;
+  }
+}
+
+.sidenav-container {
+  position: fixed;
+  top: $navbar-height;
+  bottom: 0;
+  width: 100%;
+
+  mat-sidenav {
+    background-color: burlywood;
+    width: 180px;
+  }
+  mat-sidenav-content {
+    padding: 2rem;
   }
 }

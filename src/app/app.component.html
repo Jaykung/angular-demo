@@ -4,30 +4,34 @@
   </a>
   <ul fxLayout="row" fxFlexAlign="center">
     <li>
-      <button mat-button>Menu 1</button>
+      <button mat-button routerLink="home">Home</button>
     </li>
     <li>
-      <button mat-button>Menu 2</button>
+      <button mat-button routerLink="portfolio">Portfolio</button>
     </li>
     <li>
-      <button mat-button>Menu 3</button>
+      <button mat-button routerLink="playground">My Playground</button>
+    </li>
+    <li>
+      <button mat-button routerLink="about-me">About Me</button>
     </li>
   </ul>
   <div fxFlex></div>
   <ul fxLayout="row" fxFlexAlign="center">
     <li>
       <mat-form-field class="search">
-        <input matInput placeholder="Search this site">
+        <input matInput placeholder="Search">
       </mat-form-field>
     </li>
-    <li fxFlexAlign="center">
-      <button mat-button>Log In</button>
-    </li>
-    <li></li>
   </ul>
 </nav>
 <!-- Top Nav: end -->
 
 <!-- Sidebar: begin -->
-TODO
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened="true">Sidenav content</mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 <!-- Sidebar: end -->
